@@ -1,5 +1,7 @@
+import Chai from "./chai.jsx";
 function App() {
-  return <h1>Vite React Working 🚀</h1>;
+  const username = " harshit";
+  return <h2>Chai username {username} </h2>;
 }
 
 export default App;
