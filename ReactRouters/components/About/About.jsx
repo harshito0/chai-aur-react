@@ -1,34 +1,38 @@
 import React from "react";
+// download image and place in assets
 
 export default function About() {
   return (
-    <div className="py-16 bg-white">
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-          <div className="md:5/12 lg:w-5/12">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* IMAGE */}
+          <div className="md:w-5/12">
             <img
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-              alt="image"
+              src="https://images.pexels.com/photos/11035411/pexels-photo-11035411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="about"
+              className="w-full"
             />
           </div>
-          <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+
+          {/* CONTENT */}
+          <div className="md:w-7/12 space-y-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
               React development is carried out by passionate developers
             </h2>
-            <p className="mt-6 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-              omnis voluptatem accusantium nemo perspiciatis delectus atque
-              autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-              consequatur! Officiis id consequatur atque doloremque!
+
+            <p className="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
+              voluptatem accusantium nemo perspiciatis delectus.
             </p>
-            <p className="mt-4 text-gray-600">
+
+            <p className="text-gray-500">
               Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
+              expedita at asperiores nemo possimus.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

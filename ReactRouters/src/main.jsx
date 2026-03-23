@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 
 import Layout from "./Layout.jsx";
 import Home from "../components/Home/Home.jsx";
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "Home",
+        index: true,
         element: <Home />,
       },
       {
